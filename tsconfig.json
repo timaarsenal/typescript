@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    // Режим обучения: tsc только проверяет типы, ничего не компилирует.
+    // Файлы запускаются напрямую: node src/index.ts
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "erasableSyntaxOnly": true,
+
+    // Environment Settings
+    "module": "nodenext",
+    "target": "es2022",
+    "lib": ["es2022"],
+    "types": ["node"],
+
+    // Stricter Typechecking Options
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    // Style Options
+    "noImplicitReturns": true,
+    "noImplicitOverride": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noFallthroughCasesInSwitch": true,
+
+    // Module / Interop
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}

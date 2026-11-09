@@ -1,0 +1,19 @@
+{
+  "name": "new-folder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.ts",
+    "dev": "node --watch src/index.ts",
+    "check": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2"
+  }
+}
