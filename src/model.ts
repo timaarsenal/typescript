@@ -36,3 +36,22 @@ function getPlannedForAge(list: Activity[], childAgeMonths: number): Activity[] 
     (a) => a.status === "planned" && a.fromAgeMonths <= childAgeMonths && childAgeMonths <= a.toAgeMonths,
   );
 }
+
+// Функция считает, сколько всего минут займут занятия, которые ещё запланированы
+function totalPlannedMinutes(list: Activity[]): number {
+  // Заводим счётчик минут и начинаем с нуля
+  let sum = 0;
+  // Берём занятия из списка по одному
+  for (const a of list) {
+    // Если занятие ещё запланировано (не сделано и не пропущено)
+    if (a.status === "planned") {
+      // Прибавляем его минуты к счётчику
+      sum = sum + a.durationMin;
+    }
+  }
+  // Отдаём итог наружу
+  return sum;
+}
+
+// прогноз: запланированы два занятия, лепка (30 мин) и пазл (10 мин), значит выведется 40
+console.log(totalPlannedMinutes(activities));
