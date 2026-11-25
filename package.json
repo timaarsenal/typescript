@@ -18,6 +18,7 @@
     "my": "node src/my.ts",
     "tasks": "node src/tasks.ts",
     "arrays": "node src/4-arrays.ts",
+    "weather": "node src/weather-currency.ts",
 
     "check": "tsc",
     "test": "tsc --noEmit"
