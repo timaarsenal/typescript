@@ -6,7 +6,21 @@
   "scripts": {
     "start": "node src/index.ts",
     "dev": "node --watch src/index.ts",
-    "check": "tsc"
+
+    "run:file": "node",
+    "watch:file": "node --watch",
+
+    "functions": "node src/1-functions.ts",
+    "errors": "node src/2-errors.ts",
+    "interface": "node src/3-interface.ts",
+    "flights": "node src/flights.ts",
+    "bugs": "node src/flights-bugs.ts",
+    "my": "node src/my.ts",
+    "tasks": "node src/tasks.ts",
+    "arrays": "node src/4-arrays.ts",
+
+    "check": "tsc",
+    "test": "tsc --noEmit"
   },
   "keywords": [],
   "author": "",
