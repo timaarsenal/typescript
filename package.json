@@ -6,6 +6,8 @@
   "scripts": {
     "start": "node src/index.ts",
     "dev": "node --watch src/index.ts",
+    "bot": "node --env-file-if-exists=.env src/balapan-bot.ts",
+    "bot:demo": "node src/balapan-bot.ts --demo",
     "check": "tsc"
   },
   "keywords": [],
